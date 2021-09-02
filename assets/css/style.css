@@ -1,0 +1,311 @@
+/* Reset CSS */
+@import url(../fonts/ttfirsneue.css);
+@import url(../fonts/spaceranger.css);
+
+/* Global CSS - Begin */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+body {
+    font-family: 'TT Firs Neue', monospace;
+    font-size: 16px;
+    background-color: #171717;
+    color: #fff;
+}
+
+:root {
+    --primary: #72f34b;
+    --controller-rotate: 0deg;
+    --p-color: #d1d1d1;
+}
+
+button {
+    border: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 2em;
+    margin: 0;
+}
+/* Global CSS - End */
+
+#nav-bar {
+    position: fixed;
+    display: flex;
+    padding: 24px 160px;
+    background-color: #171717;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.nav-bar__logo {
+    height: 24px;
+    width: auto;
+    min-width: 100px;
+    flex: 1;
+    
+}
+
+.logo__img {
+    height: 24px;
+    width: auto;
+}
+
+.nav-bar__nav {
+    flex: 4;
+   
+}
+
+.nav__container {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+.nav__link-item {
+    margin: 0px 20px;
+}
+
+.nav-bar__btn {
+    padding: 12px 40px;
+    font-size: 14px;
+    background-color: var(--primary);
+    border-radius: 2px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#main {
+    
+}
+
+#banner {
+    background-image: url(../img/banner.7cc59236.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 1000px; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner__title {
+    font-family: 'Space Ranger','TT Firs Neue', monospace;
+    margin-top: 240px;
+    margin-bottom: 0;
+    z-index: 1;
+    font-size: 88px;
+    text-align: center;
+    line-height: 78px;
+    max-width: 1100px;
+
+}
+
+.title__firstline {
+
+}
+
+.title__secondline {
+    font-family: 'Space Ranger Outline','Space Ranger',monospace;
+    font-weight: 400;
+}
+
+.banner__subtitle {
+    max-width: 970px;
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 32px;
+}
+
+.banner__btn {
+    background: #21361a;
+    padding: 16px 80px;
+    margin-top: 40px;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+#discover {
+    display: flex;
+    padding: 80px;
+    background-color: #171717;
+    margin-top: 320px;
+    z-index: 2;
+    width: 90%;
+}
+
+.discover__item {
+    flex: 1 1 auto;
+    padding: 0 20px;
+}
+
+.discover__title {
+    font-size: 24px;
+}
+
+.discover__detail {
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 28px;
+    color: var(--p-color);
+}
+
+.discover__detail ul {
+    list-style: none;
+}
+
+#discover  .discover__detail li::before {
+    content: "■"; /* /25A0 */
+    font-size: 8px;
+    color: var(--primary);
+    margin-right: 12px;
+}
+
+.controller {
+    position: absolute;
+}
+
+.controller__ps5 {
+    bottom: 350px;
+    right: -100px;
+    transform: rotate(var(--controller-rotate));
+    z-index: 1;
+}
+
+.controller__xbox {
+    top: 80px;
+    left: 20px;
+}
+
+#intro {
+    margin-top: 200px;
+}
+
+.intro__section {
+    display: block;
+    position: relative;
+}
+
+.intro__section:first-child {
+    background-color: #0a0a0a;
+}
+
+.section__header {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+}
+.section__header > img {
+    width: 100%;
+    height: auto;
+    
+}
+
+.section__content {
+    display: flex;
+    z-index: 2;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 160px;
+}
+
+.flex-reverse {
+    flex-direction: row-reverse;
+}
+
+.content__text {
+    max-width: 550px;
+}
+
+.content__text h2 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+    margin: 0 0 32px 0
+}
+
+.content__text p {
+    color: var(--p-color);
+}
+
+.content__text p span {
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.header__container {
+
+}
+
+.intro__section > .description {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,36px);
+}
+
+.flex-column {
+    flex-direction: column;
+    text-align: center;
+}
+
+.description {
+    font-size: 20px;
+    max-width: 1060px;
+    color: var(--p-color);
+}
+
+.grid__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px 160px;
+}
+
+.grid__container > img {
+    width: 100%;
+}
+
+.grid__item {
+    background-color: #0a0a0a;
+    padding: 48px 60px;
+}
+
+.grid__item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.header {
+    background: url(../img/gamefi.8b0c7064.png) no-repeat;
+    background-size: cover;
+    aspect-ratio: 1440/231;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
