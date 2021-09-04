@@ -131,7 +131,7 @@ img {
     background-image: url(../img/banner.7cc59236.png);
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 1000px; */
+    background-color: #0a0a0a;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -177,6 +177,7 @@ img {
 #discover {
     display: flex;
     padding: 80px;
+    padding-bottom: 24px;
     background-color: #171717;
     margin-top: 320px;
     z-index: 2;
@@ -400,6 +401,7 @@ img {
     background-size: cover;
     margin-right: 100px;
     padding: 40px 160px;
+    position: relative;
 }
 
 .fees__title {
@@ -425,7 +427,22 @@ img {
 }
 
 .fees_img {
+    position: absolute;
+    bottom: -70px;
+    right: -20px;
+    width: calc(100% - 820px);
+}
 
+.fees_img::after {
+    content: "";
+    position: absolute;
+    inset: 20px -20px -20px 20px;
+    border: 1px solid var(--primary);
+}
+
+.fees_img img {
+    width: 100%;
+    max-height: 400px;
 }
 
 #token {
