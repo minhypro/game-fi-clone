@@ -9,6 +9,7 @@
 
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -482,17 +483,12 @@ img {
     background: var(--primary);
 }
 
-.slide-left {
+.bg-side {
     background-image: url(../img/slider-side.png);
 }
 
-.slide-center {
+.bg-center {
     background-image: url(../img/slide-center-green.png);
-
-}
-
-.slide-right {
-    background-image: url(../img/slider-side.png);
 
 }
 

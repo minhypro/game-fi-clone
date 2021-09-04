@@ -1,0 +1,29 @@
+@media (min-width: 1025px) {
+    .fade {
+        opacity: 0;
+        transform: translateY(30px);
+        will-change: opacity,transform;
+        transition: .8s;
+    }
+    
+    .active, .active>.slideLeft, .active>.slideRight{
+        transform: none!important;
+        opacity: 1!important;
+    }
+    
+    .slideLeft, .slideRight {
+        will-change: transform;
+        transition: .8s;
+    }
+    
+    .slideRight {
+        transform: translateX(50vw) skewX(-15deg);
+    }
+    
+    .slideLeft {
+        transform: translateX(-50vw) skewX(15deg);
+    }
+    
+
+
+}
