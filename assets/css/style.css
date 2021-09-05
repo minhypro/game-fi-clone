@@ -668,3 +668,8 @@ img {
 #footer > div {
     flex: 0 1 200px;
 }
+
+#module {
+    display: none;
+}
+

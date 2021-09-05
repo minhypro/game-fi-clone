@@ -24,7 +24,9 @@
         transform: translateX(-50vw) skewX(15deg);
     }
     
-
+    #nav-bar .mb-bars {
+        display: none;
+    }
 
 }
 
