@@ -20,7 +20,7 @@ window.addEventListener('scroll', () => {
     ps5.style.transform = `rotate(${pos/20}deg)`;
     xbox.style.transform = `rotate(-${pos/20}deg)`;
     
-    console.log(pos)
+    // console.log(pos)
     if (window.outerHeight>=1039) {
 
         if (pos>200) {
