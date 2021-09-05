@@ -21,61 +21,123 @@ window.addEventListener('scroll', () => {
     xbox.style.transform = `rotate(-${pos/20}deg)`;
     
     console.log(pos)
+    if (window.outerHeight>=1039) {
+
+        if (pos>200) {
+            disItems.forEach(item => {
+                item.classList.add('active')
+            })
+        }
     
-    if (pos>200) {
-        disItems.forEach(item => {
-            item.classList.add('active')
-        })
-    }
-
-    if (pos>999) {
-        js1000.classList.add('active')
-    }
-
-    if (pos>1650) {
-        js1650.classList.add('active')
-    }
-
-    if (pos>2699) {
-        js2700s.forEach(item => {
-            item.classList.add('active')
-        })
-    }
-
-    if (pos>3110) {
-        js3110s.forEach(item => {
-            item.classList.add('active')
-        })
-    }
-
-    if (pos>4400) {
-        js3960s.forEach(item => {
-            item.classList.add('active')
-        })
-    }
-
-    if (pos>4600) {
-        js4200s.forEach(item => {
-            item.classList.add('active')
-        })
-    }
-
-    if (pos>5830) {
-        js5530s.forEach(item => {
-            item.classList.add('active')
-        })
-    }
-
-    if (pos>7600) {
-        js7100.classList.add('active')
-    }
+        if (pos>999) {
+            js1000.classList.add('active')
+        }
     
-    if (pos>7750) {
-        js7250.classList.add('active')
-    }
+        if (pos>1650) {
+            js1650.classList.add('active')
+        }
     
-    if (pos>7900) {
-        js7450.classList.add('active')
+        if (pos>2699) {
+            js2700s.forEach(item => {
+                item.classList.add('active')
+            })
+        }
+    
+        if (pos>3110) {
+            js3110s.forEach(item => {
+                item.classList.add('active')
+            })
+        }
+    
+        if (pos>4400) {
+            js3960s.forEach(item => {
+                item.classList.add('active')
+            })
+        }
+    
+        if (pos>4600) {
+            js4200s.forEach(item => {
+                item.classList.add('active')
+            })
+        }
+    
+        if (pos>5830) {
+            js5530s.forEach(item => {
+                item.classList.add('active')
+            })
+        }
+    
+        if (pos>7600) {
+            js7100.classList.add('active')
+        }
+        
+        if (pos>7750) {
+            js7250.classList.add('active')
+        }
+        
+        if (pos>7900) {
+            js7450.classList.add('active')
+        }
+    }
+
+    if (760<=window.outerHeight<=1038) {
+
+        if (pos>138) {
+            disItems.forEach(item => {
+                item.classList.add('active')
+            })
+        }
+    
+        if (pos>1111) {
+            js1000.classList.add('active')
+        }
+    
+        if (pos>1435) {
+            js1650.classList.add('active')
+        }
+    
+        if (pos>2361) {
+            js2700s.forEach(item => {
+                item.classList.add('active')
+            })
+        }
+    
+        if (pos>2613) {
+            js3110s.forEach(item => {
+                item.classList.add('active')
+            })
+        }
+    
+        if (pos>3517) {
+            js3960s.forEach(item => {
+                item.classList.add('active')
+            })
+        }
+    
+        if (pos>3817) {
+            js4200s.forEach(item => {
+                item.classList.add('active')
+            })
+        }
+    
+        if (pos>5150) {
+            js5530s.forEach(item => {
+                item.classList.add('active')
+            })
+        }
+    
+        if (pos>6666) {
+            js7100.classList.add('active')
+        }
+        
+        if (pos>6868) {
+            js7250.classList.add('active')
+        }
+        
+        if (pos>7000) {
+            js7450.classList.add('active')
+        }
     }
     
 })
+
