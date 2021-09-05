@@ -220,7 +220,6 @@ img {
 .controller__ps5 {
     bottom: 350px;
     right: -100px;
-    transform: rotate(var(--controller-rotate));
     z-index: 1;
 }
 
