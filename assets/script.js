@@ -138,6 +138,65 @@ window.addEventListener('scroll', () => {
             js7450.classList.add('active')
         }
     }
+
+    else {
+
+        if (pos>300) {
+            disItems.forEach(item => {
+                item.classList.add('active')
+            })
+        }
+    
+        if (pos>1040) {
+            js1000.classList.add('active')
+        }
+    
+        if (pos>1435) {
+            js1650.classList.add('active')
+        }
+    
+        if (pos>2310) {
+            js2700s.forEach(item => {
+                item.classList.add('active')
+            })
+        }
+    
+        if (pos>2613) {
+            js3110s.forEach(item => {
+                item.classList.add('active')
+            })
+        }
+    
+        if (pos>3499) {
+            js3960s.forEach(item => {
+                item.classList.add('active')
+            })
+        }
+    
+        if (pos>3799) {
+            js4200s.forEach(item => {
+                item.classList.add('active')
+            })
+        }
+    
+        if (pos>5150) {
+            js5530s.forEach(item => {
+                item.classList.add('active')
+            })
+        }
+    
+        if (pos>6666) {
+            js7100.classList.add('active')
+        }
+        
+        if (pos>6868) {
+            js7250.classList.add('active')
+        }
+        
+        if (pos>7000) {
+            js7450.classList.add('active')
+        }
+    }
     
 })
 
