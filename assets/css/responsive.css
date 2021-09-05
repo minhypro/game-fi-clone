@@ -28,6 +28,9 @@
         display: none;
     }
 
+    .grid__item .supported__img {
+        height: 80px;
+    }
 }
 
 @media (max-width: 740px) {

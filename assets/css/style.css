@@ -518,6 +518,10 @@ img {
     filter: grayscale(1) invert(0.2);
 }
 
+.grid__item .gamefi-logo {
+    width: 60%;
+}
+
 #roadmap {
     background-color: #0a0a0a;
     padding-bottom: 140px;

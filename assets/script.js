@@ -20,7 +20,7 @@ window.addEventListener('scroll', () => {
     ps5.style.transform = `rotate(${pos/20}deg)`;
     xbox.style.transform = `rotate(-${pos/20}deg)`;
     
-    // console.log(pos)
+    console.log(pos)
     if (window.outerHeight>=1039) {
 
         if (pos>200) {
@@ -33,7 +33,7 @@ window.addEventListener('scroll', () => {
             js1000.classList.add('active')
         }
     
-        if (pos>1650) {
+        if (pos>1799) {
             js1650.classList.add('active')
         }
     
@@ -80,7 +80,7 @@ window.addEventListener('scroll', () => {
         }
     }
 
-    if (760<=window.outerHeight<=1038) {
+    else if (760<=window.outerHeight) {
 
         if (pos>138) {
             disItems.forEach(item => {
