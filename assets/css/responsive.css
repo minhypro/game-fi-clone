@@ -1,17 +1,13 @@
 @media (min-width: 1025px) {
-    /* .fade {
+    .faded {
         opacity: 0;
         transform: translateY(30px);
         will-change: opacity,transform;
         transition: .8s;
     }
     
-    .active, .active>.slideLeft, .active>.slideRight{
-        transform: none!important;
-        opacity: 1!important;
-    }
-    
-    .slideLeft, .slideRight {
+    .slideLeft, 
+    .slideRight {
         will-change: transform;
         transition: .8s;
     }
@@ -22,7 +18,14 @@
     
     .slideLeft {
         transform: translateX(-50vw) skewX(15deg);
-    } */
+    }
+    
+    .active, 
+    .active> .slideLeft, 
+    .active> .slideRight{
+        transform: translateX(0) skewX(0);
+        opacity: 1!important;
+    }
     
     #nav-bar .mb-bars {
         display: none;
